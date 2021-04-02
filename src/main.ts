@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { createCommand } from "commander";
 import { show } from "./show";
 import { toggle } from "./toggle";
