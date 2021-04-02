@@ -1,11 +1,14 @@
 {
   "name": "ats-toggle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "toggles NSAppTransportSecurity for iOS Info.plist",
   "main": "dist/main.js",
+  "bin": {
+    "ats-toggle": "dist/main.js"
+  },
   "author": "Richard Marks <ccpsceo@gmail.com>",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "dependencies": {
     "chalk": "^4.1.0",
     "cli-table": "^0.3.6",
@@ -25,8 +28,9 @@
     "ts-jest": "^26.5.4"
   },
   "scripts": {
+    "prepublish": "yarn build",
     "build": "tsc",
     "clean": "rm -rf ./dist",
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   }
 }
