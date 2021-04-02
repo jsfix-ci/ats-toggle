@@ -6,6 +6,10 @@
   "bin": {
     "ats-toggle": "dist/main.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RichardMarks/ats-toggle.git"
+  },
   "author": "Richard Marks <ccpsceo@gmail.com>",
   "license": "MIT",
   "private": false,
